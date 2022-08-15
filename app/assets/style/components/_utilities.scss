@@ -1,0 +1,41 @@
+// 圖片替代文字
+.logo-link {
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+}
+
+// hover文字漸層效果
+.hover-gradient {
+    &:hover {
+        // color: $primary  !important;
+        // background: linear-gradient(bottom, $primary 0, $secondary 100%);
+        @include gradient-y;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.1s;
+    }
+}
+
+// hover背景漸層效果
+.hover-bg-gradient {
+    &:hover {
+        // background: linear-gradient(bottom, $primary 0, $secondary 100%);
+        // @include gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%); 
+        @include gradient-y;
+        color: $proGray !important;
+        transition: all 0.1s;
+    }
+}
+
+// 下邊線漸層
+.bg-gradient-bottom {
+    background: linear-gradient(to right, $primary 50%, $secondary 50%) bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+// 英文字型
+.Azeret-mono{
+    font-family: "Azeret Mono";
+}

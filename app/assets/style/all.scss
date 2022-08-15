@@ -2,5 +2,13 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
 
-@import './layout/index.scss'
+@import "./base/base";
+@import "./helpers/gradients";
+@import "./helpers/mixin";
+@import "./components/utilities";
+
+@import "./pages/index";
+@import "./layout/header";
+@import "./layout/footer";
