@@ -433,6 +433,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -499,6 +500,7 @@ $utilities: map-merge(
     // scss-docs-end utils-text
     // scss-docs-start utils-color
     "color": (
+      responsive: true,
       property: color,
       class: text,
       values: map-merge(
@@ -516,6 +518,7 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true,
       property: background-color,
       class: bg,
       values: map-merge(
@@ -523,6 +526,7 @@ $utilities: map-merge(
         (
           "body": $body-bg,
           "white": $white,
+          "black": $black,
           "transparent": transparent
         )
       )

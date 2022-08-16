@@ -1,0 +1,46 @@
+.title-border-deco {
+    &::after {
+        content: "";
+        position: absolute;
+        background: $primary;
+        width: 50px;
+        height: 3px;
+        left: 50%;
+        top: 52px;
+        transform: translateX(-50%);
+    }
+}
+
+.title-border-deco-advantage {
+    &::after {
+        content: "";
+        position: absolute;
+        background: $primary;
+        width: 50px;
+        height: 3px;
+        top: 96px;
+        left: 0;
+
+        @include pad {
+            left: 50%;
+            top: 86px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.title-border-deco-program {
+    &::after {
+        content: "";
+        position: absolute;
+        background: $primary;
+        width: 50px;
+        height: 3px;
+        left: 50%;
+        top: 52px;
+        transform: translateX(-50%);
+        @include mobile-xs{
+            top: 85px;
+        }
+    }
+}
