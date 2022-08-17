@@ -1,5 +1,4 @@
 // home-intro (手把手帶你) hover效果
-
 .home-intro-hover {
     &:hover {
         background-color: #202020 !important;
@@ -13,5 +12,49 @@
             -webkit-text-fill-color: transparent;
             transition: all 0.1s;
         }
+    }
+}
+
+// suggestion-card
+.suggestion-card-hover {
+    &:hover {
+        border: 2px solid $primary  !important;
+    }
+}
+
+// article-card
+.squareRounded {
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    &-topLeft {
+        border-top: 1px solid #62DB54;
+        border-left: 1px solid #62DB54;
+        border-top-left-radius: 10px;
+    }
+
+    &-topRight {
+        border-top: 1px solid #62DB54;
+        border-right: 1px solid #62DB54;
+        border-top-right-radius: 10px;
+    }
+
+    &-bottomLeft {
+        border-bottom: 1px solid #62DB54;
+        border-left: 1px solid #62DB54;
+        border-bottom-left-radius: 10px;
+    }
+
+    &-bottomRight {
+        border-bottom: 1px solid #62DB54;
+        border-right: 1px solid #62DB54;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.card:hover {
+    .squareRounded {
+        display: block;
     }
 }

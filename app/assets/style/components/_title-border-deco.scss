@@ -6,7 +6,7 @@
         width: 50px;
         height: 3px;
         left: 50%;
-        top: 52px;
+        bottom: -16px;
         transform: translateX(-50%);
     }
 }
@@ -18,29 +18,29 @@
         background: $primary;
         width: 50px;
         height: 3px;
-        top: 96px;
+        bottom: -16px;
         left: 0;
 
         @include pad {
             left: 50%;
-            top: 86px;
             transform: translateX(-50%);
         }
     }
 }
 
-.title-border-deco-program {
+.title-border-deco-feature {
     &::after {
         content: "";
         position: absolute;
-        background: $primary;
+        background: white;
         width: 50px;
         height: 3px;
-        left: 50%;
-        top: 52px;
+        left: 25px;
+        bottom: -16px;
         transform: translateX(-50%);
-        @include mobile-xs{
-            top: 85px;
+        @include pad{
+            background: $primary;
+            left: 50%;
         }
     }
 }

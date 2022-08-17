@@ -1,0 +1,35 @@
+.bg-mask-proDark{
+    background: rgba($color: #1c1c1c, $alpha: 0.9);
+    
+    &:hover{
+        background: rgba($color: #1c1c1c, $alpha: 0.12);
+        .material-icons{
+            color: $primary !important;
+        }
+        .title-border-deco-feature {
+            &::after {
+                background: $primary;
+            }
+        }
+        .card-text{
+            color: white !important;
+        }
+    }
+}
+
+// .card-img-overlay{
+//     z-index: 1;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         background: $proDark;
+//         opacity: 80%;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         bottom: 0;
+//         z-index: 100;
+//     }
+// }

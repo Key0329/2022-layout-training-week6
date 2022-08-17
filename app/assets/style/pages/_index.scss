@@ -32,3 +32,16 @@
 
 
 // ----------------------------main----------------------------
+
+.bg-image-review{
+  background-image: url(../images/bg_share.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.img-position-review{
+  top: -50px;
+  right: 32px;
+}
