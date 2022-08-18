@@ -79,24 +79,26 @@ $dark:          $gray-900 !default;
 $proDark:        #1C1C1C;
 $proGray:        #2D2D2D;
 $c-dark:         #202020;
-$transparent:     transparent;
+$transparent:    transparent;
+$white:          $white;
 
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
-  "proDark": $proDark,
-  "proGray": $proGray,    
+  "primary":     $primary,
+  "secondary":   $secondary,
+  "success":     $success,
+  "info":        $info,
+  "warning":     $warning,
+  "danger":      $danger,
+  "light":       $light,
+  "dark":        $dark,
+  "proDark":     $proDark,
+  "proGray":     $proGray,    
   "transparent": $transparent, 
   "c-dark":      $c-dark,
+  "white":       $white,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -480,6 +482,7 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
+$line-height-xl:              3;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default; //32px

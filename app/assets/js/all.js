@@ -1,12 +1,12 @@
 // 學習程式swiper
 
-var swiper = new Swiper(".mySwiper", {
+const swiper1 = new Swiper(".Swiper1", {
   slidesPerView: 2,
   spaceBetween: 10,
   freeMode: true,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swp1",
     clickable: true,
   },
   breakpoints: {
@@ -36,3 +36,30 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+
+
+// review swiper
+
+const swiper2 = new Swiper('.swiper2', {
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  // 分頁   
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // 左右箭頭    
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: true,
+  keyboard: true,
+  loop: true,
+  
+
+});
+
