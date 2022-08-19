@@ -58,3 +58,12 @@
         display: block;
     }
 }
+
+// 文字hover
+.hover-primary{
+    &:hover{
+        p{
+            color: $primary !important;
+        }
+    }
+}

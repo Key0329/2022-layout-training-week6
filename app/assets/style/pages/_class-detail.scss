@@ -1,0 +1,58 @@
+.class-detail {
+    margin-top: 91px;
+}
+
+.title-border-deco-classDetail {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 27px;
+        width: 2px;
+        background: $primary;
+        left: -9px;
+    }
+}
+
+.deco-box-list {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        background: $primary;
+        left: -13px;
+        top: 12px;
+        transform: translateY(-50%);
+    }
+}
+
+.title-border-deco-classDetail-longer {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 27px;
+        width: 2px;
+        background: $primary;
+        left: -9px;
+
+        @include mobile-sm {
+            height: 54px;
+        }
+    }
+}
+
+.class-price{
+    top: 171px;
+}
+
+.deco-box-classDetail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+
+.btn-forward{
+    width: 32px;
+    height: 32px;
+}

@@ -26,12 +26,28 @@
     transition: all 0.1s;
 }
 
+.bg-c-gradientY {
+    @include gradient-y;
+    color: white  !important;
+    transition: all 0.1s;
+}
+
 // hover背景漸層效果
 .hover-bg-gradient {
     &:hover {
         // background: linear-gradient(bottom, $primary 0, $secondary 100%);
         // @include gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%); 
         @include gradient-y;
+        color: $proGray  !important;
+        transition: all 0.1s;
+    }
+}
+
+.hover-bg-gradientX {
+    &:hover {
+        // background: linear-gradient(bottom, $primary 0, $secondary 100%);
+        // @include gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%); 
+        @include gradient-x;
         color: $proGray  !important;
         transition: all 0.1s;
     }
