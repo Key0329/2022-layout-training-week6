@@ -1,0 +1,17 @@
+.class{
+    margin-top: 91px;
+}
+
+.btn-outline-white{
+    &.active{
+        border: 1px solid $primary;
+        color: $primary;
+        background: transparent;
+    }
+}
+
+.img-class{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
