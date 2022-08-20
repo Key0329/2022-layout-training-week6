@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    registration
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <header class="header bg-proGray py-6 bg-gradient-bottom fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- PC LOGO -->
+      <a class="logo-link d-none d-md-block" href="./index.html"
+        style="background-image: url(./assets/images/logo.svg); background-repeat: no-repeat; height: 42px; width: 175px;">Coding
+        Home</a>
+      <!-- mobile LOGO -->
+      <a class="logo-link d-md-none" href="./index.html"
+        style="background-image: url(./assets/images/logo2.svg); background-repeat: no-repeat; height: 42px; width: 175px;">Coding
+        Home</a>
+      <!-- PC menu -->
+      <ul class="nav d-none d-md-flex display-9">
+        <li class="nav-item">
+          <a class="nav-link text-white hover-gradient px-0 ms-12" aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-gradient px-0 ms-12" href="#">課程介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-gradient px-0 ms-12 d-flex" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+              class="material-icons-round align-middle me-1">
+              account_circle
+            </i>
+            <p class="mb-0">登入</p>
+          </a>
+        </li>
+      </ul>
+      <!-- mobile menu -->
+      <a data-bs-toggle="collapse" href="#collapseHamMenu" role="button" class="d-md-none">
+        <span class="material-icons align-middle">menu</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="collapse bg-proGray display-9 d-md-none fixed-top" style="top:90px" id="collapseHamMenu">
+    <ul class="nav flex-column py-3">
+      <li class="nav-item text-center">
+        <a class="nav-link text-white hover-bg-gradient py-3" aria-current="page" href="#">首頁</a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-white hover-bg-gradient py-3" href="#">課程介紹</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hover-bg-gradient d-flex py-3" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i class="material-icons-round align-middle me-1 ms-auto">
+            account_circle
+          </i>
+          <p class="mb-0 me-auto">登入</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+<main class="registration">
+    <!-- timeline -->
+    <section class="bg-black bg-lg-proDark py-6 pb-lg-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-9">
+                    <div class="timeline position-relative"></div>
+                    <div class="row px-3">
+                        <div class="col-3 col-lg-2">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-1 active">
+                                <p class="text-nowrap mb-0 pt-6">課程報名</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-8">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-2">
+                                <p class="mb-0 pt-6">信用卡付款</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-3">
+                                <p class="text-nowrap mb-0 pt-6">付款成功</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- registration-form -->
+    <section class="bg-black pt-0 pb-10 pt-lg-12 pb-lg-36">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div
+                        class="card card-teacher position-relative bg-proGray border-0 rounded-0 p-6 py-lg-12 px-lg-8 mb-11 mb-lg-0">
+                        <img src="./assets/images/teacher01.jpg" alt="teacher01"
+                            class="card-img img-registration mb-4 mb-lg-6">
+                        <div class="card-body p-0">
+                            <h2 class="h6 text-center fw-bold mb-2 mb-lg-1">2022 Python 全攻略｜從入門到實務</h2>
+                            <p class="text-primary text-center mb-2">前端語言</p>
+                            <p class="mb-0">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="registration-form bg-proDark py-lg-12 pe-lg-8 ps-c-114">
+                        <h1 class="h4 fw-bold text-center mb-6 mb-lg-12">課程報名</h1>
+                        <!-- payment method-->
+                        <h3 class="h6 fw-bold text-center text-lg-start mb-4 mb-lg-2">選擇付款方式</h3>
+                        <div class="btn-group-registration d-flex gap-2 flex-wrap mb-8">
+                            <a href="#"
+                                class="btn text-white border border-1 border-white hover-outline-to-primary active p-4 px-lg-8">信用卡付款</a>
+                            <a href="#"
+                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">超商繳款</a>
+                            <a href="#"
+                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">ATM轉帳</a>
+                            <a href="#"
+                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">12期分期付款</a>
+                        </div>
+                        <!-- form -->
+                        <h3 class="h6 fw-bold text-center text-lg-start mb-4 mb-lg-6">訂單資訊</h3>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 pe-lg-6 mb-4 mb-lg-0">
+                                    <label for="regiName" class="form-label text-c-gray">姓名</label>
+                                    <input type="text" id="regiName"
+                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入姓名">
+                                </div>
+                                <div class="col-lg-6 ps-lg-6 mb-4 mb-lg-6">
+                                    <label for="regiTel" class="form-label text-c-gray">電話</label>
+                                    <input type="tel" id="regiTel" class="form-control bg-proDark rounded-1 text-white"
+                                        placeholder="請輸入電話號碼">
+                                </div>
+                                <div class="col-12 mb-4 mb-lg-6">
+                                    <label for="regiEmail" class="form-label text-c-gray">Email</label>
+                                    <input type="email" id="regiEmail"
+                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入Email">
+                                </div>
+                                <div class="col-lg-6 pe-lg-6 mb-4 mb-lg-0">
+                                    <label for="regiCourse" class="form-label text-c-gray">課程</label>
+                                    <select class="form-select bg-proDark rounded-1 text-white" id="regiCourse" aria-label="Default select example">
+                                        <option selected>10堂50分鐘</option>
+                                        <option value="1">1堂50分鐘</option>
+                                        <option value="2">3堂50分鐘</option>
+                                        <option value="3">20堂50分鐘</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 ps-lg-6 mb-4 mb-lg-6">
+                                    <label for="regiDate" class="form-label text-c-gray">想預約的日期</label>
+                                    <input type="text" id="regiDate" name="foo" class="form-control bg-proDark rounded-1 text-white"
+                                        placeholder="請選擇日期">
+                                </div>
+                                <div class="col-12 mb-6">
+                                    <label for="regiPlace" class="form-label text-c-gray">上課地點</label>
+                                    <input type="place" id="regiPlace"
+                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入上課地點">
+                                </div>
+                                <div class="col-12 d-lg-flex justify-content-between align-items-center">
+                                    <p class="Azeret-mono display-9 mb-6 mb-lg-0">NT$1600</p>
+                                    <a href="#" class="btn w-100 w-lg-auto border-0 bg-c-gradient hover-bg-gradient py-2 px-4 px-lg-12"><p class="display-9 mb-0">前往結賬</p></a>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <footer class="footer bg-proGray py-4 py-md-6">
+      <p class="mb-0 Azeret-mono text-center display-9">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+
+    <!-- Modal-login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content bg-proGray rounded-0 border border-1 border-white position-relative">
+          <button type="button" class="btn-close btn-close-login" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 justify-content-center pt-10 pt-lg-6 pb-0 pb-lg-2">
+            <h4 class="modal-title fw-bold" id="loginModalLabel">登入</h4>
+          </div>
+
+          <div class="modal-body modal-content-width pb-0 pt-6 px-6 p-lg-6">
+            <form>
+              <label for="email-login" class="form-label text-c-gray">信箱</label>
+              <input type="email" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="email-login" placeholder="請輸入信箱">
+              <label for="password-login" class="form-label text-c-gray">密碼</label>
+              <input type="password" class="form-control rounded-1 bg-proDark border border-1 border-white text-white mb-4 mb-lg-6" id="password-login" placeholder="請輸入密碼">
+            </form>
+            <a href="#" class="btn bg-c-gradient hover-bg-gradient border-0 rounded-2 w-100">登入</a>
+          </div>
+
+          <div class="modal-footer modal-content-width border-0 justify-content-center p-6">
+            <p class="w-100 text-center title-border-deco-modal m-0 mb-4">其他登入方式</p>
+            <a href="#" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_fb.svg" alt="icon_fb" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Facebook 登入</p>
+            </a><a href="#" class="btn btn-outline-white rounded-1 w-100 d-flex justify-content-center py-2 px-8 m-0 mb-4">
+              <img src="./assets/images/icon_google.svg" alt="icon_google" class="icon-login me-8 me-md-0">
+              <p class="mx-md-auto pe-lg-6 mb-0">Google 登入</p>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <!-- <script src="../node_modules/vanillajs-datepicker/js/Datepicker.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
