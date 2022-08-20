@@ -19,10 +19,6 @@
         }
     }
 
-    &.step2::after {
-        background: $primary;
-    }
-
     &::before {
         content: "";
         position: absolute;
@@ -38,7 +34,11 @@
         }
     }
 
-    &.step3::before {
+    &.step2::before {
+        background: $primary;
+    }
+
+    &.step3::after {
         background: $primary;
     }
 
@@ -71,7 +71,6 @@
         &.step-3::before {
             content: '3';
         }
-
         &.active {
             color: $primary  !important;
 
@@ -80,6 +79,9 @@
                 background-color: $primary;
                 border-color: $primary;
             }
+        }
+        &.active.completed::before {
+            content: "\2713";
         }
     }
 }

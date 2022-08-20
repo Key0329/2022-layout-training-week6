@@ -107,6 +107,5 @@ const datepicker = new Datepicker(elem, {
   // ...options
 }); 
 
-// const datepicker = new Datepicker(elem, {
-//   buttonClass: 'datepicker',
-// }); 
+
+
