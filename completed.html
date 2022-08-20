@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    registration
+    Order completed
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -73,26 +73,26 @@
   </div>
 
   
-<main class="registration">
-    <!-- timeline -->
+<main class="order-completed bg-black vh-100">
+    <!-- progress bar -->
     <section class="bg-black bg-lg-proDark py-6 pb-lg-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-11 col-lg-9">
-                    <div class="timeline position-relative"></div>
+                    <div class="timeline position-relative step2 step3"></div>
                     <div class="row px-3">
                         <div class="col-3 col-lg-2">
-                            <div class="timeline-pointer position-relative text-center text-c-gray step-1 active">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-1 active completed">
                                 <p class="text-nowrap mb-0 pt-6">課程報名</p>
                             </div>
                         </div>
                         <div class="col-6 col-lg-8">
-                            <div class="timeline-pointer position-relative text-center text-c-gray step-2">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-2 active completed">
                                 <p class="mb-0 pt-6">信用卡付款</p>
                             </div>
                         </div>
                         <div class="col-3 col-lg-2">
-                            <div class="timeline-pointer position-relative text-center text-c-gray step-3">
+                            <div class="timeline-pointer position-relative text-center text-c-gray step-3 active completed">
                                 <p class="text-nowrap mb-0 pt-6">付款成功</p>
                             </div>
                         </div>
@@ -102,93 +102,30 @@
         </div>
     </section>
 
-    <!-- registration-form -->
-    <section class="bg-black pt-0 pb-10 pt-lg-12 pb-lg-36">
+    <!-- completed -->
+    <section class="py-9 pt-lg-12 pb-lg-34">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-4">
-                    <div
-                        class="card card-teacher position-relative bg-proGray border-0 rounded-0 p-6 py-lg-12 px-lg-8 mb-11 mb-lg-0">
-                        <img src="./assets/images/teacher01.jpg" alt="teacher01"
-                            class="card-img img-registration mb-4 mb-lg-6">
-                        <div class="card-body p-0">
-                            <h2 class="h6 text-center fw-bold mb-2 mb-lg-1">2022 Python 全攻略｜從入門到實務</h2>
-                            <p class="text-primary text-center mb-2">前端語言</p>
-                            <p class="mb-0">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-4">
+                    <div class="bg-proGray p-6 py-lg-12 px-lg-8">
+                        <div class="d-flex justify-content-center align-items-center mb-6 mb-lg-12">
+                            <span class="material-icons-outlined display-5 text-primary lh-1 me-4">verified</span>
+                            <h1 class="h4 fw-bold mb-0">完成訂購</h1>
+                        </div>
+                        <p class="mb-6 mb-lg-8">
+                            恭喜您已完成<span class="fw-bold">「2022 Python 全攻略｜從入門到實務」</span>課程報名，請注意郵件訊息，家教老師將與您聯繫！
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn  border-0 bg-c-gradient hover-bg-gradient py-2 px-12"><p class="display-9 mb-0">看看其他課程</p></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-8">
-                    <div class="registration-form bg-proDark py-lg-12 pe-lg-8 ps-c-114">
-                        <h1 class="h4 fw-bold text-center mb-6 mb-lg-12">課程報名</h1>
-                        <!-- payment method-->
-                        <h3 class="h6 fw-bold text-center text-lg-start mb-4 mb-lg-2">選擇付款方式</h3>
-                        <div class="btn-group-registration d-flex gap-2 flex-wrap mb-8">
-                            <a href="#"
-                                class="btn text-white border border-1 border-white hover-outline-to-primary active p-4 px-lg-8">信用卡付款</a>
-                            <a href="#"
-                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">超商繳款</a>
-                            <a href="#"
-                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">ATM轉帳</a>
-                            <a href="#"
-                                class="btn text-white border border-1 border-white hover-outline-to-primary p-4 px-lg-8">12期分期付款</a>
-                        </div>
-                        <!-- form -->
-                        <h3 class="h6 fw-bold text-center text-lg-start mb-4 mb-lg-6">訂單資訊</h3>
-
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6 pe-lg-6 mb-4 mb-lg-0">
-                                    <label for="regiName" class="form-label text-c-gray">姓名</label>
-                                    <input type="text" id="regiName"
-                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入姓名">
-                                </div>
-                                <div class="col-lg-6 ps-lg-6 mb-4 mb-lg-6">
-                                    <label for="regiTel" class="form-label text-c-gray">電話</label>
-                                    <input type="tel" id="regiTel" class="form-control bg-proDark rounded-1 text-white"
-                                        placeholder="請輸入電話號碼">
-                                </div>
-                                <div class="col-12 mb-4 mb-lg-6">
-                                    <label for="regiEmail" class="form-label text-c-gray">Email</label>
-                                    <input type="email" id="regiEmail"
-                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入Email">
-                                </div>
-                                <div class="col-lg-6 pe-lg-6 mb-4 mb-lg-0">
-                                    <label for="regiCourse" class="form-label text-c-gray">課程</label>
-                                    <select class="form-select bg-proDark rounded-1 text-white" id="regiCourse" aria-label="Default select example">
-                                        <option selected>10堂50分鐘</option>
-                                        <option value="1">1堂50分鐘</option>
-                                        <option value="2">3堂50分鐘</option>
-                                        <option value="3">20堂50分鐘</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6 ps-lg-6 mb-4 mb-lg-6">
-                                    <label for="regiDate" class="form-label text-c-gray">想預約的日期</label>
-                                    <input type="text" id="regiDate" name="foo" class="form-control bg-proDark rounded-1 text-white"
-                                        placeholder="請選擇日期">
-                                </div>
-                                <div class="col-12 mb-6">
-                                    <label for="regiPlace" class="form-label text-c-gray">上課地點</label>
-                                    <input type="place" id="regiPlace"
-                                        class="form-control bg-proDark rounded-1 text-white" placeholder="請輸入上課地點">
-                                </div>
-                                <div class="col-12 d-lg-flex justify-content-between align-items-center">
-                                    <p class="Azeret-mono display-9 mb-6 mb-lg-0">NT$1600</p>
-                                    <a href="#" class="btn w-100 w-lg-auto border-0 bg-c-gradient hover-bg-gradient py-2 px-4 px-lg-12"><p class="display-9 mb-0">前往結賬</p></a>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
 </main>
+
 
     <footer class="footer bg-proGray py-4 py-md-6">
       <p class="mb-0 Azeret-mono text-center display-9">Coding Home © 2022 All Rights Reserved</p>

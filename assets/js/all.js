@@ -95,7 +95,5 @@ var swiper3 = new Swiper(".Swiper3", (_Swiper = {
 
 var elem = document.querySelector('input[name="foo"]');
 var datepicker = new Datepicker(elem, {// ...options
-}); // const datepicker = new Datepicker(elem, {
-//   buttonClass: 'datepicker',
-// });
+});
 //# sourceMappingURL=all.js.map
