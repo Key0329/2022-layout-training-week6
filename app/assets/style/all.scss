@@ -2,6 +2,7 @@
 @import "./helpers/variables";
 @import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+// @import '../../../node_modules/vanillajs-datepicker/sass/datepicker-bs5';
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
 
@@ -15,9 +16,12 @@
 @import "./components/hover";
 @import "./components/text-in-border";
 @import "./components/bg-mask";
+@import "./components/modal";
+
 
 @import "./pages/index";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./pages/class";
 @import "./pages/class-detail";
+@import "./pages/registration";

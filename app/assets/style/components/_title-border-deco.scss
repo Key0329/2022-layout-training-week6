@@ -29,6 +29,7 @@
 }
 
 .title-border-deco-feature {
+    width: 100%;
     &::after {
         content: "";
         position: absolute;
@@ -42,5 +43,25 @@
             background: $primary;
             left: 50%;
         }
+    }
+}
+
+.title-border-deco-modal{
+    display: flex;
+    align-items: center;
+    color: #c1c1c1;
+    &::before{
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #c1c1c1;
+        margin-right: 1rem;
+    }
+    &::after{
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #c1c1c1;
+        margin-left: 1rem;
     }
 }

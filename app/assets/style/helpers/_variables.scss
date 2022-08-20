@@ -296,6 +296,7 @@ $spacers: (
   23: $spacer * 5.75,
   24: $spacer * 6,
   25: $spacer * 6.25,
+  36: $spacer * 9,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1308,7 +1309,7 @@ $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-sm:                          300px !default;
-$modal-md:                          500px !default;
+$modal-md:                          635px !default;
 $modal-lg:                          800px !default;
 $modal-xl:                          1140px !default;
 
@@ -1477,7 +1478,7 @@ $btn-close-width:            1em !default;
 $btn-close-height:           $btn-close-width !default;
 $btn-close-padding-x:        .25em !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
-$btn-close-color:            $black !default;
+$btn-close-color:            $white !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>") !default;
 $btn-close-focus-shadow:     $input-btn-focus-box-shadow !default;
 $btn-close-opacity:          .5 !default;

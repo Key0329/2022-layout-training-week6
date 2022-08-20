@@ -64,8 +64,14 @@ const swiper2 = new Swiper('.swiper2', {
 const swiper3 = new Swiper(".Swiper3", {
   slidesPerView: 2,
   spaceBetween: 10,
+  // init: true,
   freeMode: true,
   loop: true,
+  loopAdditionalSlides: 6,
+  loopPreventsSlide: true,
+  loopedSlides: 6,
+  slidesPerView: 'auto',
+  
   breakpoints: {
     375: {
       slidesPerView: 2,
@@ -93,3 +99,14 @@ const swiper3 = new Swiper(".Swiper3", {
     },
   },
 });
+
+// datepicker
+
+const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  // ...options
+}); 
+
+// const datepicker = new Datepicker(elem, {
+//   buttonClass: 'datepicker',
+// }); 

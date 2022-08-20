@@ -67,3 +67,15 @@
         }
     }
 }
+
+// btn-outline-to-primary
+.hover-outline-to-primary{
+    &:hover{
+        border-color: $primary !important;
+        color: $primary !important;
+    }
+    &.active{
+        border-color: $primary !important;
+        color: $primary !important;
+    }
+}
