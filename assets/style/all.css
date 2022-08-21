@@ -25045,6 +25045,11 @@ body {
   color: #c1c1c1;
 }
 
+.text-op-white {
+  color: white;
+  opacity: 0.8;
+}
+
 .ms-c-13 {
   margin-left: 13px;
 }
@@ -25144,22 +25149,10 @@ body {
 }
 
 .deco-box {
+  position: absolute;
   width: 10px;
   height: 10px;
   background: #fff;
-}
-
-.deco-box-2 {
-  right: -10px;
-}
-
-.deco-box-3 {
-  bottom: -10px;
-}
-
-.deco-box-4 {
-  right: -10px;
-  bottom: -10px;
 }
 
 .title-border-deco::after {
@@ -25246,6 +25239,30 @@ body {
   height: 1px;
   background: #c1c1c1;
   margin-left: 1rem;
+}
+
+.title-border-deco-classDetail::before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 2px;
+  background: #62DB54;
+  left: -9px;
+}
+
+.title-border-deco-classDetail-longer::before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 2px;
+  background: #62DB54;
+  left: -9px;
+}
+
+@media (max-width: 414px) {
+  .title-border-deco-classDetail-longer::before {
+    height: 54px;
+  }
 }
 
 .home-intro-hover:hover {
@@ -25377,9 +25394,16 @@ body {
   height: 24px;
 }
 
-.banner {
-  margin-top: 91px;
-  background-color: #1C1C1C;
+.footer p {
+  line-height: 19px;
+  color: #909090;
+}
+
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .bg-image {
@@ -25560,19 +25584,7 @@ body {
   font-size: 104px;
 }
 
-.footer p {
-  line-height: 19px;
-  color: #909090;
-}
-
-@media (max-width: 767px) {
-  .footer p {
-    font-size: 12px;
-    line-height: 14px;
-  }
-}
-
-.class {
+main {
   margin-top: 91px;
 }
 
@@ -25590,20 +25602,7 @@ body {
      object-fit: cover;
 }
 
-.class-detail {
-  margin-top: 91px;
-}
-
-.title-border-deco-classDetail::before {
-  content: "";
-  position: absolute;
-  height: 27px;
-  width: 2px;
-  background: #62DB54;
-  left: -9px;
-}
-
-.deco-box-list::before {
+.deco-box-classDetail-list::before {
   content: "";
   position: absolute;
   height: 5px;
@@ -25616,39 +25615,20 @@ body {
           transform: translateY(-50%);
 }
 
-.title-border-deco-classDetail-longer::before {
-  content: "";
-  position: absolute;
-  height: 27px;
-  width: 2px;
-  background: #62DB54;
-  left: -9px;
-}
-
-@media (max-width: 414px) {
-  .title-border-deco-classDetail-longer::before {
-    height: 54px;
-  }
-}
-
-.class-price {
+.classDetail-price {
   top: 171px;
 }
 
-.deco-box-classDetail {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #fff;
+@media (max-width: 992px) {
+  .classDetail-price {
+    position: relative;
+    top: 0;
+  }
 }
 
 .btn-forward {
   width: 32px;
   height: 32px;
-}
-
-.registration {
-  margin-top: 91px;
 }
 
 .timeline::after {
@@ -25824,14 +25804,6 @@ body {
 
 .datepicker-controls button {
   border: none;
-}
-
-.payment {
-  margin-top: 91px;
-}
-
-.order-completed {
-  margin-top: 91px;
 }
 
 /*# sourceMappingURL=all.css.map */
