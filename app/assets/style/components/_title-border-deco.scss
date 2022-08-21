@@ -65,3 +65,29 @@
         margin-left: 1rem;
     }
 }
+
+.title-border-deco-classDetail {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 27px;
+        width: 2px;
+        background: $primary;
+        left: -9px;
+    }
+}
+
+.title-border-deco-classDetail-longer {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 27px;
+        width: 2px;
+        background: $primary;
+        left: -9px;
+
+        @include mobile-sm {
+            height: 54px;
+        }
+    }
+}

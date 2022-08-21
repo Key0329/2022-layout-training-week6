@@ -2,7 +2,7 @@
 title: class-detail
 layout: ./app/layout.ejs
 engine: ejs
-current: class-detail
+current: class-detail.html
 ---
 
 <main class="class-detail">
@@ -68,10 +68,10 @@ current: class-detail
                     <div class="card card-body bg-proGray rounded-4 p-6 p-lg-8 mb-10 mb-lg-0">
                             <h6 class="title-border-deco-classDetail position-relative mb-4 ms-2">這堂課你將會學到：</h6>
                             <ul class="list-unstyled mb-8">
-                                <li class="deco-box-list position-relative ms-c-13">網頁設計，基礎知識</li>
-                                <li class="deco-box-list position-relative ms-c-13">HTML 語法，概念實作能力</li>
-                                <li class="deco-box-list position-relative ms-c-13">CSS , Javascript 概念與知識</li>
-                                <li class="deco-box-list position-relative ms-c-13">能做出一個基礎的HTML 網頁</li>
+                                <li class="deco-box-classDetail-list position-relative ms-c-13">網頁設計，基礎知識</li>
+                                <li class="deco-box-classDetail-list position-relative ms-c-13">HTML 語法，概念實作能力</li>
+                                <li class="deco-box-classDetail-list position-relative ms-c-13">CSS , Javascript 概念與知識</li>
+                                <li class="deco-box-classDetail-list position-relative ms-c-13">能做出一個基礎的HTML 網頁</li>
                             </ul>
                             <h6 class="title-border-deco-classDetail-longer position-relative mb-8 mb-lg-4 ms-2">什麼是
                                 HTML，為什麼要打造網頁，就一定要先學它？</h6>
@@ -83,18 +83,18 @@ current: class-detail
     
                 <!-- aside price list -->
                 <div class="col-lg-4">
-                    <aside class="class-price sticky-lg-top bg-proGray border border-1 border-white py-10 px-6 px-lg-8">
+                    <aside class="classDetail-price sticky-lg-top bg-proGray border border-1 border-white py-10 px-6 px-lg-8">
     
                         <!-- deco-boxes -->
-                        <div class="deco-box-classDetail top-0 start-0 translate-middle"></div>
-                        <div class="deco-box-classDetail top-0 start-100 translate-middle"></div>
-                        <div class="deco-box-classDetail top-100 start-0 translate-middle"></div>
-                        <div class="deco-box-classDetail top-100 start-100 translate-middle"></div>
+                        <div class="deco-box top-0 start-0 translate-middle"></div>
+                        <div class="deco-box top-0 start-100 translate-middle"></div>
+                        <div class="deco-box top-100 start-0 translate-middle"></div>
+                        <div class="deco-box top-100 start-100 translate-middle"></div>
     
                         <!-- price-list -->
                         <ul class="list-group list-group-flush list-unstyled mb-0">
                             <li class="list-group-item bg-transparent border-gray p-0 pb-4 mb-4">
-                                <a class="d-flex justify-content-between align-items-center hover-primary" href="#">
+                                <a class="d-flex justify-content-between align-items-center hover-primary" href="./registration.html">
                                     <div class="text-white">
                                         <p class="Azeret-mono lh-c-28 h4 mb-0">NT$1600</p>
                                         <p class="mb-0">1堂50分鐘</p>
@@ -105,7 +105,7 @@ current: class-detail
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-gray p-0 pb-4 mb-4">
-                                <a class="d-flex justify-content-between align-items-center hover-primary" href="#">
+                                <a class="d-flex justify-content-between align-items-center hover-primary" href="./registration.html">
                                     <div class="text-white">
                                         <p class="Azeret-mono lh-c-28 h4 mb-0">NT$1400</p>
                                         <p class="mb-0">3堂50分鐘</p>
@@ -116,7 +116,7 @@ current: class-detail
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-gray p-0 pb-4 mb-4">
-                                <a class="d-flex justify-content-between align-items-center hover-primary" href="#">
+                                <a class="d-flex justify-content-between align-items-center hover-primary" href="./registration.html">
                                     <div class="text-white">
                                         <p class="Azeret-mono lh-c-28 h4 mb-0">NT$1000</p>
                                         <p class="mb-0">10堂50分鐘</p>
@@ -127,7 +127,7 @@ current: class-detail
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-gray p-0 pb-4 mb-4">
-                                <a class="d-flex justify-content-between align-items-center hover-primary" href="#">
+                                <a class="d-flex justify-content-between align-items-center hover-primary" href="./registration.html">
                                     <div class="text-white">
                                         <p class="Azeret-mono lh-c-28 h4 mb-0">NT$900</p>
                                         <p class="mb-0">20堂50分鐘</p>
@@ -138,7 +138,7 @@ current: class-detail
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-gray p-0">
-                                <a class="d-flex justify-content-between align-items-center hover-primary" href="#">
+                                <a class="d-flex justify-content-between align-items-center hover-primary" href="./registration.html">
                                     <div class="text-white">
                                         <p class="lh-c-28 h4 mb-0">洽談報價</p>
                                         <p class="mb-0">客製化課程/專案製作</p>
@@ -155,6 +155,7 @@ current: class-detail
         </div>
     </section>
 
+    <!-- other courses -->
     <section class="bg-black py-10 py-lg-20">
         <div class="container d-flex flex-column">
             <h3 class="position-relative title-border-deco fw-bold text-center mb-10 mb-lg-16">其他人也看了這些課程</h3>
@@ -171,10 +172,10 @@ current: class-detail
                             <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
                         </div>
                         <div class="card-footer border-top border-gray py-4 px-8 px-lg-6">
-                            <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-flex justify-content-center align-items-center text-white stretched-link hover-primary">
                                 <p class="me-2 mb-0">50分鐘</p>
                                 <p class="h2 Azeret-mono mb-0">NT$1600</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -190,10 +191,10 @@ current: class-detail
                             <p class="card-text">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
                         </div>
                         <div class="card-footer border-top border-gray py-4 px-8 px-lg-6">
-                            <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-flex justify-content-center align-items-center text-white stretched-link hover-primary">
                                 <p class="me-2 mb-0">50分鐘</p>
                                 <p class="h2 Azeret-mono mb-0">NT$2200</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -209,10 +210,10 @@ current: class-detail
                             <p class="card-text">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
                         </div>
                         <div class="card-footer border-top border-gray py-4 px-8 px-lg-6">
-                            <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-flex justify-content-center align-items-center text-white stretched-link hover-primary">
                                 <p class="me-2 mb-0">50分鐘</p>
                                 <p class="h2 Azeret-mono mb-0">NT$1800</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -228,10 +229,10 @@ current: class-detail
                             <p class="card-text">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
                         </div>
                         <div class="card-footer border-top border-gray py-4 px-8 px-lg-6">
-                            <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-flex justify-content-center align-items-center text-white stretched-link hover-primary">
                                 <p class="me-2 mb-0">50分鐘</p>
                                 <p class="h2 Azeret-mono mb-0">NT$1100</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

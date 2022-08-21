@@ -45,8 +45,6 @@
 
 .hover-bg-gradientX {
     &:hover {
-        // background: linear-gradient(bottom, $primary 0, $secondary 100%);
-        // @include gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%); 
         @include gradient-x;
         color: $proGray  !important;
         transition: all 0.1s;

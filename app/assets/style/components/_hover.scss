@@ -29,26 +29,26 @@
     height: 32px;
 
     &-topLeft {
-        border-top: 1px solid #62DB54;
-        border-left: 1px solid #62DB54;
+        border-top: 1px solid $primary;
+        border-left: 1px solid $primary;
         border-top-left-radius: 10px;
     }
 
     &-topRight {
-        border-top: 1px solid #62DB54;
-        border-right: 1px solid #62DB54;
+        border-top: 1px solid $primary;
+        border-right: 1px solid $primary;
         border-top-right-radius: 10px;
     }
 
     &-bottomLeft {
-        border-bottom: 1px solid #62DB54;
-        border-left: 1px solid #62DB54;
+        border-bottom: 1px solid $primary;
+        border-left: 1px solid $primary;
         border-bottom-left-radius: 10px;
     }
 
     &-bottomRight {
-        border-bottom: 1px solid #62DB54;
-        border-right: 1px solid #62DB54;
+        border-bottom: 1px solid $primary;
+        border-right: 1px solid $primary;
         border-bottom-right-radius: 10px;
     }
 }

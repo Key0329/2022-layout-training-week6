@@ -1,19 +1,4 @@
-.class-detail {
-    margin-top: 91px;
-}
-
-.title-border-deco-classDetail {
-    &::before {
-        content: "";
-        position: absolute;
-        height: 27px;
-        width: 2px;
-        background: $primary;
-        left: -9px;
-    }
-}
-
-.deco-box-list {
+.deco-box-classDetail-list {
     &::before {
         content: "";
         position: absolute;
@@ -26,30 +11,12 @@
     }
 }
 
-.title-border-deco-classDetail-longer {
-    &::before {
-        content: "";
-        position: absolute;
-        height: 27px;
-        width: 2px;
-        background: $primary;
-        left: -9px;
-
-        @include mobile-sm {
-            height: 54px;
-        }
-    }
-}
-
-.class-price{
+.classDetail-price{
     top: 171px;
-}
-
-.deco-box-classDetail {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #fff;
+    @include pad{
+        position: relative;
+        top: 0;
+    }
 }
 
 .btn-forward{
